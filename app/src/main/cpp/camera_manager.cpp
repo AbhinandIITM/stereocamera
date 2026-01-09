@@ -115,7 +115,7 @@ void CameraManager::onImageAvailable(void* context, AImageReader* reader) {
 
         cv::Mat colorMat;
         // Convert from YUV (NV21) to RGBA
-        cv::cvtColor(yuvMat, colorMat, cv::COLOR_YUV2RGBA_NV21);
+        cv::cvtColor(yuvMat, colorMat, cv::COLOR_YUV2BGRA_NV21);
 
         // Rotate 90 degrees clockwise
         cv::Mat rotated;

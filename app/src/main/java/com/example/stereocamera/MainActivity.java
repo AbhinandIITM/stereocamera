@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private void startSingleCamera() {
         // Try opening ONLY camera "0"
         // Note: We use the existing native signature but pass the same ID twice or null for ID2
-        if (initializeCameras("0", "0")) {
+        if (initializeCameras("1", "1")) {
             isRunning = true;
             renderLoop.run();
         } else {
