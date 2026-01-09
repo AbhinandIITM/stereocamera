@@ -19,9 +19,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StereoCamera">
 
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"> <!-- Attribute is now INSIDE the tag -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
